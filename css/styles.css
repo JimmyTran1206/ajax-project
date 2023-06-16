@@ -132,7 +132,7 @@ h1.page-title {
   }
 }
 
-/* main->container */
+/* main->containers */
 div.container {
   min-width: 500px;
   max-width: 100%;
@@ -200,4 +200,13 @@ h3.anime-title {
     cursive;
   font-size: 1.1rem;
   color: #c0a50c;
+}
+
+/* error box styling */
+div.container-error div.content-box#error-box {
+  width: 85%;
+}
+
+div.container-error h3.anime-title#error-title {
+  font-size: 48px;
 }

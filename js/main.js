@@ -43,7 +43,7 @@ function hideContainer($domeContainer) {
 }
 // fetch-display function for seasonal-popular animes
 function fetchDisplay(url, $domElem) {
-  $domElem.innerHTML = '';
+  $domElem.textContent = '';
   hideContainer($containerError);
   fetch(url, {})
     .then(response => response.json())
