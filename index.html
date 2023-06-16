@@ -8,12 +8,85 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Pacifico&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <!-- ............................. -->
 </head>
 <body>
   <header>
+    <nav>
+      <a href="#" class="navbar-brand">
+        AnieHub
+      </a>
+
+      <!-- checkbox for hamburger menu -->
+      <input type="checkbox" id="hamburger">
+      <!-- ........................... -->
+
+      <ul class="nav-list">
+        <li class="nav-item" id="seasonal-link">
+          <a class="nav-link" >
+            Seasonal
+          </a>
+        </li>
+        <li class="nav-item" id="popular-link">
+          <a class="nav-link" >
+            Popular
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <label for="hamburger" class="navbar-toggler">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+    </nav>
   </header>
   <main>
+    <div class="container">
+      <h1 class="page-title">SEASONAL</h1>
+
+      <div class="container-seasonal">
+        <!-- Seasonal animes come here. -->
+
+      </div>
+
+      <div class="container-popular hidden">
+        <!-- Popular animes come here. -->
+      </div>
+
+      <div class="container-error hidden">
+        <div class="content-box" id="error-box">
+          <div class="content-item" id="error">
+            <div class="content-title">
+              <h3 class="anime-title" id="error-title">おっと Oops, some errors has occurred. Please try again later. Thank you. ありがとう</h3>
+            </div>
+            <div class="content-image">
+              <img class="anime-image" src="images/anime-girls-404-not-found.jpg" alt="404 not found image">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
+
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>

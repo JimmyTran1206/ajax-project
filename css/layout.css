@@ -1,0 +1,6 @@
+/* Overwritten other style by specificity to avoid using !important */
+body main div.hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
